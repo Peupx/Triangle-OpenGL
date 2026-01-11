@@ -1,3 +1,0 @@
-C:/Users/ph544/OneDrive/Documentos/Projects/C++/OpenGL/SimpleWindow/build/CMakeFiles/OpenGLTest.dir
-C:/Users/ph544/OneDrive/Documentos/Projects/C++/OpenGL/SimpleWindow/build/CMakeFiles/edit_cache.dir
-C:/Users/ph544/OneDrive/Documentos/Projects/C++/OpenGL/SimpleWindow/build/CMakeFiles/rebuild_cache.dir
