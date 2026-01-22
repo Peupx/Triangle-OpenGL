@@ -2,8 +2,11 @@ cmake_minimum_required(VERSION 4.1.2)
 project(OpenGLTest VERSION 1.0.0)
 cmake_policy(SET CMP0072 NEW)
 
+find_library(GLFW_LIB 
+    NAMES glfw3 glfw 
+    PATHS "dependencies/lib"
+)
 find_package(OpenGL REQUIRED)
-find_package(glfw3 REQUIRED)
 
 add_executable(OpenGLTest
     src/config.h
@@ -14,4 +17,4 @@ add_executable(OpenGLTest
 )
 
 target_include_directories(OpenGLTest PRIVATE dependencies)
-target_link_libraries(OpenGLTest glfw OpenGL::GL)
+target_link_libraries(OpenGLTest PRIVATE ${GLFW_LIB} OpenGL::GL)
